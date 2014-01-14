@@ -20,6 +20,7 @@
 package net.fred.feedex.utils;
 
 import android.os.Build;
+import android.annotation.TargetApi;
 
 import net.fred.feedex.MainApplication;
 
@@ -31,6 +32,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+@TargetApi(18)
 public class StringUtils {
 
     public static DateFormat DATE_SHORT_FORMAT = null;

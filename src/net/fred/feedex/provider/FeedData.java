@@ -50,6 +50,7 @@ import android.provider.BaseColumns;
 import android.text.TextUtils;
 
 import net.fred.feedex.Constants;
+import net.fred.feedex.utils.PrefUtils;
 
 public class FeedData {
     public static final String CONTENT = "content://";
@@ -131,9 +132,10 @@ public class FeedData {
         public static final String FILTER_TEXT = "filtertext";
         public static final String IS_REGEX = "isregex";
         public static final String IS_APPLIED_TO_TITLE = "isappliedtotitle";
+        public static final String IS_ACCEPT_RULE = "isacceptrule";
 
         public static final String[][] COLUMNS = new String[][]{{_ID, TYPE_PRIMARY_KEY}, {FEED_ID, TYPE_EXTERNAL_ID}, {FILTER_TEXT, TYPE_TEXT},
-                {IS_REGEX, TYPE_BOOLEAN}, {IS_APPLIED_TO_TITLE, TYPE_BOOLEAN}};
+                {IS_REGEX, TYPE_BOOLEAN}, {IS_APPLIED_TO_TITLE, TYPE_BOOLEAN}, {IS_ACCEPT_RULE, TYPE_BOOLEAN}};
 
         public static final Uri CONTENT_URI = Uri.parse(CONTENT_AUTHORITY + "/filters");
 
@@ -246,5 +248,10 @@ public class FeedData {
         ContentValues values = new ContentValues();
         values.putNull(EntryColumns.IS_READ);
         return values;
+    }
+
+    public static boolean shouldShowReadEntries(Uri uri) {
+        boolean alwaysShowRead = EntryColumns.FAVORITES_CONTENT_URI.equals(uri) || (FeedDataContentProvider.URI_MATCHER.match(uri) == FeedDataContentProvider.URI_SEARCH);
+        return alwaysShowRead || PrefUtils.getBoolean(PrefUtils.SHOW_READ, true);
     }
 }

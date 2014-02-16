@@ -22,6 +22,7 @@
 <resources>
 
     <!-- GENERAL -->
+    <string name="about_feedex">About FeedEx</string>
     <string name="never">mai</string>
     <string name="update">Actualitza</string>
     <string name="colon">:u00A0</string>
@@ -45,6 +46,7 @@
     <string name="no_filters">No hi ha filtres</string>
     <string name="context_menu_delete">Elimina</string>
     <string name="edit_feed_title">Edita el canal</string>
+    <string name="menu_edit_feeds">Edit feeds</string>
     <string name="new_feed_title">Nou canal</string>
     <string name="context_menu_edit">Edita</string>
     <string name="menu_add_group">Afegir un grup</string>
@@ -73,6 +75,8 @@
     <string name="filter_is_regex">és una expresió regular</string>
     <string name="filter_apply_to_title">Aplica al títol</string>
     <string name="filter_apply_to_content">Aplica al contingut</string>
+    <string name="accept">ACCEPT</string>
+    <string name="reject">REJECT</string>
     <string name="feed_search">Cerca canals</string>
     <string name="feed_search_by_web_search">Cerca canals per paraula clau</string>
     <string name="feed_search_by_topic">Genera canals per tema (via Faroo)</string>
@@ -111,6 +115,10 @@
     <string name="see_enclosure">Mostra el fitxer adjunt</string>
     <string name="see_link">Mostra al navegador</string>
     <string name="cant_open_link">No s\'ha trobat una aplicació\'per aquest enllaç.</string>
+    <string name="open_enclosure">Open enclosure</string>
+    <string name="file">File</string>
+    <string name="download_and_save">Download and save</string>
+    <string name="open_link">Open link</string>
 
     <!-- WIDGET -->
     <string name="red">Vermell</string>
@@ -156,6 +164,8 @@
     <string name="settings_font_size">Mida del text</string>
     <string name="settings_font_size_description">Sel·lecciona la mida del text de les entrades.
     </string>
+    <string name="settings_display_oldest_first">Entries order</string>
+    <string name="settings_display_oldest_first_description">Display oldest entries first</string>
     <string name="settings_refresh_on_open">Actualitza els canals a l\'inici</string>
     <string name="settings_refresh_on_open_description">Descarregarà nous continguts dels canals a
         l\'inici de l\'aplicació.

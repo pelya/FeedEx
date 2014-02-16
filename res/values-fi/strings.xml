@@ -22,6 +22,7 @@
 <resources>
 
     <!-- GENERAL -->
+    <string name="about_feedex">Tietoja FeedExista</string>
     <string name="never">ei koskaan</string>
     <string name="update">Päivitetty</string>
     <string name="colon">:\u00A0</string>
@@ -45,6 +46,7 @@
     <string name="no_filters">Ei sääntöjä</string>
     <string name="context_menu_delete">Poista</string>
     <string name="edit_feed_title">Muokkaa syötettä</string>
+    <string name="menu_edit_feeds">Muokkaa syötteitä</string>
     <string name="new_feed_title">Uusi syöte</string>
     <string name="context_menu_edit">Muokkaa</string>
     <string name="menu_add_group">Lisää ryhmä</string>
@@ -64,13 +66,15 @@
     <string name="tab_feed_title">Syöte</string>
     <string name="tab_filters_title">Suodatus</string>
     <string name="feed_title">OTSIKKO</string>
-    <string name="feed_filters">POISTA SÄÄNTÖJEN MUKAISET ARTIKKELIT</string>
+    <string name="feed_filters">SUODATTIMEN SÄÄNNÖT</string>
     <string name="filter_add_title">Lisää sääntö</string>
     <string name="filter_delete_title">Poista sääntö</string>
     <string name="filter_edit_title">Muokkaa sääntöä</string>
     <string name="filter_is_regex">on säännöllinen lauseke (regex)</string>
     <string name="filter_apply_to_title">Sovella otsikkoon</string>
     <string name="filter_apply_to_content">Sovella sisältöön</string>
+    <string name="accept">HYVÄKSY</string>
+    <string name="reject">HYLKÄÄ</string>
     <string name="feed_search">Etsi syötteitä</string>
     <string name="feed_search_by_web_search">Etsi syötteitä avainsanojen avulla</string>
     <string name="feed_search_by_topic">Generoi syöte aiheen mukaan (FAROO-haun avulla)</string>
@@ -109,6 +113,10 @@
     <string name="see_enclosure">Avaa liite</string>
     <string name="see_link">Avaa selaimessa</string>
     <string name="cant_open_link">Linkin avaamiseen kykenevää sovellusta ei löydy.</string>
+    <string name="open_enclosure">Avaa liite</string>
+    <string name="file">Tiedosto</string>
+    <string name="download_and_save">Lataa ja tallenna</string>
+    <string name="open_link">Avaa linkki</string>
 
     <!-- WIDGET -->
     <string name="red">Punainen</string>
@@ -147,6 +155,8 @@
     </string>
     <string name="settings_font_size">Kirjasintyypin koko</string>
     <string name="settings_font_size_description">Artikkelitekstin kirjasintyypin koko</string>
+    <string name="settings_display_oldest_first">Artikkelien järjestys</string>
+    <string name="settings_display_oldest_first_description">Näytä vanhimmat artikkelit ensin</string>
     <string name="settings_refresh_on_open">Päivitä käynnistettäessä</string>
     <string name="settings_refresh_on_open_description">Päivitä kaikki syötteet sovelluksen käynnistyessä
     </string>
